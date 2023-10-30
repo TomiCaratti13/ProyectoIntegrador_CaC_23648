@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- https://tomicaratti13.github.io/ProyectoIntegrador_CaC_23648/ -->
+    <title>Integrador - Tomas Caratti - 23648</title>
+</head>
+
+<body>
+
+    <!-- Inicio Header -->
+    <header>
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark fixed-top py-1 d-block" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" aria-current="page" href="index.html">
+                    <img src="images/codoacodo-min.png" alt="Logo Codo a Codo" width="100" height="65">
+                    <p class="conf">Conf Bs As</p>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link fw-medium" href="index.html#Conferencia">La Conferencia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-medium" href="index.html#Oradores">Los Oradores</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-medium" href="index.html#LugarFecha">Lugar y Fecha</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-medium" href="index.html#Conviertete">Conviertete en Orador</a>
+                        </li>
+                        <li class="nav-item fw-medium">
+                            <a class="nav-link text-success" href="#">Comprar tickets</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Fin Navbar -->
+    </header>
+
+    <!-- Inicio Cards -->
+        <div class="mt-5 general">
+            <div class="mt-5 container">
+                <div class="precios">
+                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                        <div class="col">
+                            <div class="card h-100" style="border-color: blue; border-width: 2px;">
+                                <div class="card-body">
+                                    <h5 class="card-title" style="text-align: center;">Estudiante</h5>
+                                    <p class="card-text" style="text-align: center;">Tienen un descuento</p>
+                                    <h6 class="descuento">80%</h6>
+                                    <p class="bajadas">*presentar documentación</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100" style="border-color: green; border-width: 2px;">
+                                <div class="card-body">
+                                    <h5 class="card-title" style="text-align: center;">Trainee</h5>
+                                    <p class="card-text" style="text-align: center;">Tienen un descuento</p>
+                                    <h6 class="descuento">50%</h6>
+                                    <p class="bajadas">*presentar documentación</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100" style="border-color: orange; border-width: 2px;">
+                                <div class="card-body">
+                                    <h5 class="card-title" style="text-align: center;">Junior</h5>
+                                    <p class="card-text" style="text-align: center;">Tienen un descuento</p>
+                                    <h6 class="descuento">15%</h6>
+                                    <p class="bajadas">*presentar documentación</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="titulo">
+                <p>VENTA</p>
+                <h1>VALOR DE TICKET $200</h1>
+            </div>
+            <div class="container">
+                <div class="ubicacion">
+                    <form action="" class="form" id="form">
+                        <div class="form-validacion">
+                            <input type="text" class="input" id="nombre" placeholder="Nombre">
+                            <div><small>Error message</small></div>
+                        </div>
+                        <div class="form-validacion">
+                            <input type="text" class="input" id="apellido" placeholder="Apellido">
+                            <div><small>Error message</small></div>
+                        </div>
+                        <div class="form-validacion">
+                            <input type="email" class="input" id="correo" placeholder="Correo">
+                            <div><small>Error message</small></div>
+                        </div>
+                        <div class="form-validacion">
+                            <div class="grupo" id="grupo">
+                                <div class="label"><label for="cantidad" class="label"> Cantidad </label></div>
+                                <div class="label"><label for="categoria" class="label"> Categoria </label></div>
+                                <input type="text" class="cantidad" id="cantidad" placeholder="Cantidad">
+                                <select name="categoria" class="categoria" id="categoria">
+                                    <option value="0">Sin descuento</option>
+                                    <option value="1">Estudiante</option>
+                                    <option value="2">Trainee</option>
+                                    <option value="3">Junior</option>
+                                </select>
+                                <div><small>Error message</small></div>
+                            </div>
+                        </div>
+                </div>
+                <div class="total" id="total">Total a pagar: $ </div>
+            </div>
+            <div class="grbotones" id="grbotones">
+                <button type="reset" class="boton" id="borrar">Borrar</button>
+                <button class="boton" id="resumen" type="submit">Resumen</button>
+                <div class="correcto" id="correcto">Validation message</div>
+            </div>
+            </form>
+        </div>
+        </div>
+        </div>
+    
+        <div class="navegacion">
+            <ul class="nav justify-content-center navbar-dark bg-dark p-4">
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="#">Preguntas frecuentes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="#">Contactános</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="#">Prensa</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light">Conferencias</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light">Términos y condiciones</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light">Privacidad</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light">Estudiantes</a>
+                </li>
+            </ul>
+        </div>
+        <!-- JavaScript Bundle with Popper -->
+    <section id="Oradores" class="container my-5 mt-5">
+        <div class="titulo">
+            <p class="fw-medium fs-6 mt-3 mb-1">CONOCE A LOS</p>
+            <h3 class="fw-bold fs-2 mb-5">ORADORES</h3>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <button type="button" class="btn btn-warning">JavaScript</button><button type="button"
+                            class="btn btn-info">Rect</button>
+                        <h5 class="card-title fw-bold">Steve Jobs</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem ex
+                            laudantium
+                            deleniti tempore ullam non, totam inventore veniam odit explicabo ducimus consequuntur qui?
+                            Ad ipsam
+                            sapiente voluptate!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <button type="button" class="btn btn-warning">JavaScript</button><button type="button"
+                            class="btn btn-info">Rect</button>
+                        <h5 class="card-title fw-bold">Bill Gates</h5>
+                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis,
+                            tempore unde
+                            eveniet hic aliquam voluptatibus enim, dolorem voluptas autem modi sunt nam eius id dicta
+                            maxime porro,
+                            aliquid iste non!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <button type="button" class="btn btn-secondary">Negocios</button><button type="button"
+                            class="btn btn-danger">Startups</button>
+                        <h5 class="card-title fw-bold">Ada Lovelace</h5>
+                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo reiciendis
+                            unde rerum!
+                            Minima error, repudiandae consequatur ad omnis consectetur nemo eaque cumque nobis doloribus
+                            illum aperiam
+                            magnam sed maxime.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="Conviertete" class="container my-5">
+        <div class="titulo">
+            <p class="fw-medium fs-6 mt-3 mb-1">CONVIERTETE EN UN</p>
+            <h3 class="fw-bold fs-2 mb-2">ORADOR</h3>
+            <p class="mb-4 text-center">Anotate como orador para dar una <span class="subrayado">charla ignite</span>.
+                Cuentanos de que
+                quieres hablar!</p>
+        </div>
+        <form class="row needs-validation form" autocomplete="off">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-6 mb-2">
+                    <label for="formNombre"></label>
+                    <input id="formNombre" name="Nombre" type="text" placeholder="Nombre" required=""
+                        class="form-control">
+                </div>
+                <div class="col-md-6 mb-2">
+                    <label for="formApellido"></label>
+                    <input id="formApellido" name="Apellido" type="text" placeholder="Apellido" required=""
+                        class="form-control">
+                </div>
+                <div class="col-12">
+                    <label for="formComentario"></label>
+                    <textarea id="formComentario" cols="30" rows="4" placeholder="¿Sobre que quiere hablar?" required=""
+                        class="form-control" style="resize: none;"></textarea>
+                </div>
+                <div class="form-text mb-4">Recuerda incluir un título para tu charla.</div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-success col-lg-6 col-md-4 col-sm-2">Enviar</button>
+                </div>
+        </form>
+    </section>
+
+    <footer class="text-white bg-dark">
+        <div>
+            <ul class="nav justify-content-center navbar-dark bg-dark p-4">
+                <li class="nav-item">
+                    <a class="nav-link text-light">Preguntas frecuentes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light">Contactános</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light">Prensa</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light">Conferencias</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light">Términos y condiciones</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light">Privacidad</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light">Estudiantes</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
