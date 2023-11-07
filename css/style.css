@@ -76,3 +76,32 @@
 .form {
     margin-bottom: 4rem;
 }
+
+#Comprar {
+    margin-top: 6rem;
+}
+
+.card-ticket {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: 0.6rem;
+    flex-wrap: wrap;
+    min-width: 16rem;
+}
+.border-red{
+    border: 2px solid #d00;
+}
+.border-blue{
+    border: 2px solid #00d;
+}
+.border-green{
+    border: 2px solid #090;
+}
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
